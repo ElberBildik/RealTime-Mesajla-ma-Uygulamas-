@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8BC34A"
+    tools:context=".kayitOl">
+
+    <EditText
+        android:id="@+id/kullaniciAdi"
+        android:layout_width="250dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Kullanıcı Adı:"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/sifre"
+        android:layout_width="251dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Sifre:"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kullaniciAdi" />
+
+    <Button
+        android:id="@+id/kayitOl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:onClick="kayitOl"
+        android:text="Kayit Ol"
+        app:layout_constraintEnd_toEndOf="@+id/sifre"
+        app:layout_constraintStart_toStartOf="@+id/sifre"
+        app:layout_constraintTop_toBottomOf="@+id/sifre" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:onClick="anaSayfa"
+        android:text="Ana Sayfa"
+        app:layout_constraintEnd_toEndOf="@+id/sifre"
+        app:layout_constraintStart_toStartOf="@+id/sifre"
+        app:layout_constraintTop_toBottomOf="@+id/kayitOl" />
+</androidx.constraintlayout.widget.ConstraintLayout>
